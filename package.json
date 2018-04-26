@@ -1,0 +1,30 @@
+{
+  "name": "wwc_02",
+  "version": "1.0.0",
+  "description": "wwc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrystianRysnik/WWC_02.git"
+  },
+  "keywords": [
+    "wwc"
+  ],
+  "author": "Krystian Rysnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrystianRysnik/WWC_02/issues"
+  },
+  "homepage": "https://github.com/KrystianRysnik/WWC_02#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.0",
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "jquery": "^3.3.1"
+  }
+}
