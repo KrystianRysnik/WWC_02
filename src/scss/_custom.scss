@@ -1,0 +1,47 @@
+h1, h2 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+
+p {
+  font-weight: 400;
+}
+
+.invert {
+  color: #fff;
+}
+
+.button {
+  padding: 12px 30px;
+  box-shadow: $box-shadow;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  transition: all .3s;
+
+  &-orange {
+    background: #ff6033;
+  }
+  &-blue {
+    background: #5585a2;
+  }
+  &-green {
+    background: #96b92c;
+  }
+  &-red {
+    background: #f72b3b;
+  }
+
+  &:hover {
+    transform: rotateZ(-2deg) scale(1.05);
+    cursor: pointer;
+  }
+}

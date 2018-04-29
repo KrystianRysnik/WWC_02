@@ -1,0 +1,38 @@
+.services {
+  min-height: 790px;
+  height: 790px;
+  background-color: #80bfff;
+
+  .container {
+    background-image: url('../img/services.png');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .service {
+    padding: 36px 124px 36px 24px;
+    margin: 19px auto;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 92% center;
+    box-shadow: $box-shadow;
+
+    &-1 {
+      background-image: url('../img/cart.png');
+    }
+    &-2 {
+      background-image: url('../img/plant.png');
+    }
+    &-3 {
+      padding: 22px 124px 22px 24px;
+      background-image: url('../img/world.png');
+    }
+    &-4 {
+      background-image: url('../img/carrot.png');
+    }
+  }
+}

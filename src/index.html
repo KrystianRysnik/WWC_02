@@ -5,16 +5,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Weekly Webdev Challenge #02</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,800" rel="stylesheet">
+
   <!-- Bootstrap & Custom CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cahee</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#services">SERVICES</a>
+            <a class="nav-link" href="#gallery">GALLERY</a>
+            <a class="nav-link" href="#blog">BLOG</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- /Navbar -->
+  <!-- Home section -->
+  <section id="home" class="home">
+    <div class="container p-4 h-100 d-flex align-items-center">
+      <div class="row center">
+        <div class="col-sm-12 col-md-5">
+          <h2>Fresh Life</h2>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <button class="button button-orange">GET FREE NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Home section-->
+  <!-- About section -->
+  <section id="about" class="about d-flex align-items-center">
+    <div class="container p-4 h-100 invert">
+      <div class="row p-2 h-100 align-items-center flex-row-reverse">
+        <div class="col-sm-12 col-md-5">
+          <h1>About Us</h1>
+          <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+          <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+        </div>
+        <div class="col-sm-12 col-md-7">
+          <img src="img/about.png" class="img-fluid" alt="Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /About section -->
+  <!-- Services section -->
+  <section id="services" class="services">
+    <div class="container p-4 h-100">
+      <div class="row p-2 h-100 align-items-center flex-row-reverse">
+        <div class="col-sm-12 col-md-6 text-center invert">
+          <h1>Our Services</h1>
+        </div>
+        <div class="col-sm-12 col-md-6 text-center">
+          <div class="service service-1">Online Shopping</div>
+          <div class="service service-2">Quality Product</div>
+          <div class="service service-3">Domestic & International Delivery</div>
+          <div class="service service-4">Well Organized</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Services section -->
+  <!-- Gallery section -->
+  <section id="gallery" class="gallery">
+    <div class="container p-4">
+      <div class="row p-2 align-items-center flex-column">
+        <div class="col-sm-12 col-md-6 text-center">
+          <h1>Gallery</h1>
+          <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <img src="img/bg1.png" class="img-fluid" alt="First gallery photo">
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img src="img/bg2.png" class="img-fluid" alt="Second gallery photo">
+          <img src="img/bg3.png" class="img-fluid" alt="Third gallery photo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="img/bg4.png" class="img-fluid" alt="Fourth gallery photo">
+        </div>
+        <div class="col-sm-6">
+          <img src="img/bg5.png" class="img-fluid" alt="Fifth gallery photo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 p-2 text-center">
+          <button class="button button-blue">VIEW MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Galery section -->
+  <!-- Subscribe section -->
+  <section id="subscribe" class="subscribe d-flex align-items-center">
+    <div class="container p-4">
+      <div class="row p-2">
+        <div class="col-sm-12 col-md-6">
+          <h2>Subscribe To Us</h2>
+          <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="row p-2">
+        <div class="col-sm-8 col-md-6">
+          <input class="w-100 input-text" type="text" placeholder="Your email address..." required>
+        </div>
+        <div class="col-sm-4 col-md-2">
+          <input class="button button-green" type="submit" value="SUBSCRIBE">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Subscribe section -->
+  <!-- Blog section -->
+  <section id="blog" class="blog">
+    <div class="container p-4 invert">
+      <div class="row p-2 align-items-center flex-column">
+        <div class="col-sm-12 col-md-6 text-center">
+          <h1>Blog</h1>
+          <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        </div>
+      </div>
+      <div class="row p-2">
+        <!-- TO DO: Last posts -->
+      </div>
+      <div class="row p-2">
+        <div class="col-sm-12 text-center">
+          <button class="button button-red">VIEW MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Blog section -->
+  <!-- Contact section -->
+  <section id="contact" class="contact">
+    <div class="container p-4">
+      <div class="row p-2 align-items-center flex-column">
+        <div class="col-sm-12 col-md-4 text-center">
+          <h1>Contact</h1>
+          <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+        </div>
+      </div>
+      <div class="row p-2">
+        <div class="col-sm-12 col-md-6">
+          <input class="contact__form--input" type="email" placeholder="Your email">
+          <input class="contact__form--input" type="tel" placeholder="Your phone number">
+          <textarea class="contact__form--textarea" rows="10" placeholder="Your message"></textarea>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <address><strong>ADDRESS</strong><br/>123 City name, Street, City, Country</address>
+          <p><strong>EMAIL</strong><br/>cahee@domain.com</p>
+          <p><strong>PHONE</strong><br/>+012 345 6789</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Contact section -->
+  <!-- Footer section -->
+  <footer id="footer" class="footer">
+    <div class="container h-100 d-flex align-items-center invert">
+      <div class="row w-100">
+        <div class="col-sm-12 col-md-4 text-left">
+          © 2015 Company. All right reserved.
+        </div>
+        <div class="col-sm-12 col-md-4 text-center brand">
+          Cahee
+        </div>
+        <div class="col-sm-12 col-md-4 text-right">
+          Made with love by Auskteez
+          <!-- Coded by Krystian Ryśnik -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer section -->
 
-<!-- jQuery & Bootstrap JS -->
- <script src="js/jquery.min.js"></script>
- <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery & Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
   <!-- JavaScripts -->
   <script src="js/script.js"></script>

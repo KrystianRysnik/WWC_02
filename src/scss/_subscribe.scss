@@ -1,0 +1,16 @@
+.subscribe {
+  min-height: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  background-image: url('../img/subscribe.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .input-text {
+    padding: 0 15px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #000;
+  }
+}
