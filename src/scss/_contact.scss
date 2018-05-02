@@ -1,10 +1,14 @@
 .contact {
   min-height: 870px;
-  height: 870px;
   background-image: url('../img/contact.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  label {
+    display: block;
+    max-width: 500px;
+  }
 
   .form {
     margin-bottom: 16px;
@@ -12,15 +16,13 @@
     max-width: 500px;
     width: 100%;
     color: #fff;
-    background-color: #00c4c4;
+    background-color: rgba(0, 196, 196, .5);
     outline: 0;
-    border: 1px solid transparent;
-    opacity: .5;
+    border: 2px solid transparent;
 
     &::placeholder {
       color: #fff;
     }
-
     &.title {
       display: block;
       font-weight: 700;
@@ -30,6 +32,9 @@
     &.textarea {
       height: auto;
       line-height: normal;
+    }
+    &:focus {
+      border: 2px solid #00c4c4;
     }
   }
 }
