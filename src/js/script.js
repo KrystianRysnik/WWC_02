@@ -6,7 +6,13 @@ $(document).ready(function() {
   centerHome();
 });
 
-$(document).reload(navbarScroll());
+$(window).on('load', function(){
+  if( $("html, body").scrollTop() > 110 )
+    $('.navbar').addClass('bg-light');
+  else
+    $('.navbar').removeClass('bg-light');
+});
+
 
 function navbarScroll() {
   $(document).scroll(function() {
