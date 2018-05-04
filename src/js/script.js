@@ -6,8 +6,11 @@ $(document).ready(function() {
   centerHome();
 });
 
-$(window).on('load', function(){
-  if( $("html, body").scrollTop() > 110 )
+$(window).on('load', function() {
+  console.log($(window).width());
+  if ( $(window).width() <= 768 )
+    $('.navbar').addClass('bg-light');
+  else if( ($(window).width() > 768) && ($("html, body").scrollTop() > 110) )
     $('.navbar').addClass('bg-light');
   else
     $('.navbar').removeClass('bg-light');
@@ -15,7 +18,10 @@ $(window).on('load', function(){
 
 function navbarScroll() {
   $(document, "html, body").on('scroll touchmove', function() {
-    if( $("html, body").scrollTop() > 110 )
+    console.log($(window).width());
+    if ( $(window).width() <= 768 )
+      $('.navbar').addClass('bg-light');
+    else if( ($(window).width() > 768) && ($("html, body").scrollTop() > 110) )
       $('.navbar').addClass('bg-light');
     else
       $('.navbar').removeClass('bg-light');
