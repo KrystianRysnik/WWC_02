@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $('body').scrollspy({target: "#navbar", offset: 90});
+  $('#home').css('height', $(window).height());
 
   scrollTo();
   navbarScroll();
-  centerHome();
 });
 
 $(window).on('load', function() {
@@ -26,13 +26,6 @@ function navbarScroll() {
     else
       $('.navbar').removeClass('bg-light');
   });
-};
-
-function centerHome() {
-  if(  $(window).height() > 400) {
-    $('.center').children().css('top', -( ($('.home').height() / 2) - ($(window).height() / 2)));
-  }
-  else $('.center').children().css('top', '-295px');
 };
 
 function scrollTo() {

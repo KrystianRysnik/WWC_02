@@ -7,12 +7,13 @@
     max-width: 350px;
     width: 100%;
     height: 310px;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     box-shadow: $box-shadow;
     transition: .5s all;
+    overflow: hidden;
 
     &-1 {
       background-image: url('../img/blog1.png');
@@ -23,9 +24,16 @@
     &-3 {
       background-image: url('../img/blog3.png');
     }
-    &:hover {
-      background-size: 130% 130%;
+    &::before {
+      content:"";
+      position:absolute; top:0;right:0;bottom:0;left:0;
+      background:inherit;
+      transition:inherit;
     }
+      &:hover::before {
+      transform: scale(1.2);
+    }
+
 
     .date {
       padding: 6px 0;
