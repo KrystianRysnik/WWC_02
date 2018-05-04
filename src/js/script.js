@@ -13,9 +13,8 @@ $(window).on('load', function(){
     $('.navbar').removeClass('bg-light');
 });
 
-
 function navbarScroll() {
-  $(document).on('scroll touchmove', function() {
+  $(document, "html, body").on('scroll touchmove', function() {
     if( $("html, body").scrollTop() > 110 )
       $('.navbar').addClass('bg-light');
     else
