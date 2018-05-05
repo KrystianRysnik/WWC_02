@@ -19,19 +19,35 @@
     background-repeat: no-repeat;
     background-position: 92% center;
     box-shadow: $box-shadow;
+    position: relative;
 
-    &-1 {
-      background-image: url('../img/cart.png');
+    &-1::before,
+    &-2::before,
+    &-3::before,
+    &-4::before {
+      content: '';
+      margin-top: -28px;
+      position: absolute;
+      right: 28px; top: 50%;
+      z-index: 1;
+      width: 56px;
+      height: 56px;
     }
-    &-2 {
-      background-image: url('../img/plant.png');
+    &-1::before {
+      background-image: url('../img/sprite.png');
+      background-position: 0px 56px;
     }
-    &-3 {
-      padding: 22px 124px 22px 24px;
-      background-image: url('../img/world.png');
+    &-2::before {
+      background-image: url('../img/sprite.png');
+      background-position: -56px 0px;
     }
-    &-4 {
-      background-image: url('../img/carrot.png');
+    &-3::before {
+      background-image: url('../img/sprite.png');
+      background-position: -56px 56px;
+    }
+    &-4::before {
+      background-image: url('../img/sprite.png');
+      background-position: 0px 0px;
     }
   }
 }

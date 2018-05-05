@@ -1,8 +1,21 @@
 .home {
   min-height: 640px;
   background-color: #f9f8fb;
-  background-image: url('../img/home.png');
+  background-image: url('../img/home.jpg');
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
+
+  .scroll {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url('../img/sprite.png');
+    background-position: 56px 0px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    animation: scroll 2s infinite;
+  }
 }
